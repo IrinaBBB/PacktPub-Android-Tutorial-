@@ -77,5 +77,22 @@
         app:layout_constraintStart_toStartOf="@+id/enter_button"
         app:layout_constraintTop_toBottomOf="@+id/enter_button" />
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ip_address_wrapper"
+        style="@style/text_input_greeting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_ip_address"
+        app:layout_constraintLeft_toLeftOf="@id/greeting_display"
+        app:layout_constraintRight_toRightOf="@+id/greeting_display"
+        app:layout_constraintTop_toBottomOf="@+id/greeting_display" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ip_address"
+            android:digits="0123456789."
+            android:maxLength="15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

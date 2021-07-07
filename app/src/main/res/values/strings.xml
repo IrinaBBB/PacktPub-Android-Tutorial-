@@ -3,4 +3,5 @@
     <string name="first_name">First name:</string>
     <string name="last_name">Last name:</string>
     <string name="enter_button_text">Enter</string>
+    <string name="enter_ip_address">Enter ip address:</string>
 </resources>
