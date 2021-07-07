@@ -88,12 +88,12 @@
 
     <Button
         android:id="@+id/color_creator_button"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:text="@string/color_creator_button_text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-
+        app:layout_constraintEnd_toEndOf="@+id/blue_channel_wrapper"
+        app:layout_constraintStart_toStartOf="@+id/blue_channel_wrapper"
         app:layout_constraintTop_toBottomOf="@+id/blue_channel_wrapper" />
 
     <TextView
