@@ -16,5 +16,9 @@
 
     <style name="color_creator_title" parent="TextAppearance.MaterialComponents.Headline5">
         <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/brown</item>
+    </style>
+    <style name="color_creator_description" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textColor">@color/brown</item>
     </style>
 </resources>
