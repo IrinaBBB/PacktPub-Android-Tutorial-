@@ -58,9 +58,29 @@ class MainActivity : AppCompatActivity() {
 
                 hideKeyboard()
                 clearInputFields()
-
             }
         }
+    }
+
+    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
+        super.onRestoreInstanceState(savedInstanceState)
+        Log.d(TAG, "onRestoreInstanceState")
+        discountCode.text = savedInstanceState.getString(DISCOUNT_CODE, "")
+        discountCodeConfirmation.text = savedInstanceState.getString(DISCOUNT_CONFIRMATION_MESSAGE, "")
+    }
+
+//    override fun onSaveInstanceState(outState: Bundle, outPersistentState: PersistableBundle) {
+//        super.onSaveInstanceState(outState, outPersistentState)
+//        Log.d(TAG, "onSaveInstanceState")
+//        outState.putString(DISCOUNT_CODE, discountCode.text.toString())
+//        outState.putString(DISCOUNT_CONFIRMATION_MESSAGE, discountCodeConfirmation.text.toString())
+//    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        Log.d(TAG, "onSaveInstanceState")
+        outState.putString(DISCOUNT_CODE, discountCode.text.toString())
+        outState.putString(DISCOUNT_CONFIRMATION_MESSAGE, discountCodeConfirmation.text.toString())
     }
 
     private fun clearInputFields() {
