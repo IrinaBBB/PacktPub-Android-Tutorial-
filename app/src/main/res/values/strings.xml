@@ -7,4 +7,6 @@
     <string name="last_name_label">Last Name:</string>
     <string name="discount_code_button">GET DISCOUNT</string>
     <string name="discount_code_confirmation">Your discount code is below %s. Enjoy!</string>
+    <string name="discount_code_validation">You should enter values in all the three
+        fields!</string>
 </resources>
